@@ -1,11 +1,20 @@
-// import Triangle from './../src/triangle.js';
+import Haiku from './../src/haiku.js';
 
-// describe('Triangle', () => {
+describe('Haiku', () => {
+  let testHaiku;
 
-//   test('should correctly create a triangle object with three lengths', () => {
-//     const triangle = new Triangle(2,4,5);
-//     expect(triangle.side1).toEqual(2);
-//     expect(triangle.side2).toEqual(4);
-//     expect(triangle.side3).toEqual(5);
-//   });
-// });
+  beforeEach(() => {
+    testHaiku = new Haiku();
+  })
+
+  test('Should create a new Haiku class object with properties of inputText, lines, and syllables', () => {
+    expect(testHaiku.inputText).toEqual("");
+    expect(testHaiku.lines.length).toEqual(0);
+    expect(testHaiku.syllables.length).toEqual("");
+  });
+});
+
+
+  // this.inputText = "";
+  // this.lines = [];
+  // this.syllables = [];
