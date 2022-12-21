@@ -9,6 +9,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devServer: {                 // new line
+    contentBase: './dist'      // new line
+  },                           // new line
   devtool: 'eval-source-map',  // new line
   // The plugins key below this line is also new!
   plugins: [
