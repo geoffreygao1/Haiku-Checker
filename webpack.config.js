@@ -9,6 +9,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'eval-source-map',  // new line
   // The plugins key below this line is also new!
   plugins: [
     new CleanWebpackPlugin(), // new line
