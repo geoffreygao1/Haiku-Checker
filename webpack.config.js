@@ -1,6 +1,7 @@
 const path = require('path');
 // There's a new line below this one!
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // new line
 
 module.exports = {
   entry: './src/index.js',
@@ -10,6 +11,7 @@ module.exports = {
   },
   // The plugins key below this line is also new!
   plugins: [
+    new CleanWebpackPlugin(), // new line
     new HtmlWebpackPlugin({
       title: 'Shape Tracker',
       template: './src/index.html',
